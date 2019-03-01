@@ -1,7 +1,7 @@
 import os
 from PyPDF2 import PdfFileMerger
 
-filepath = '/Users/pulseid/Downloads/books'
+filepath = '/Users/test/Downloads/books'
 pdfs = [filepath + "/"+ f for f in os.listdir(filepath)]
 
 merger = PdfFileMerger()
