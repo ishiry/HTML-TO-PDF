@@ -23,7 +23,7 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option('prefs', profile)
 chrome_options.add_argument('--kiosk-printing')
 
-driver = webdriver.Chrome("/Users/pulseid/Documents/pdf2image2/chromedriver 2",chrome_options=chrome_options)
+driver = webdriver.Chrome("/Users/test/Documents/pdf2image2/chromedriver 2",chrome_options=chrome_options)
 driver.maximize_window()
 
 
@@ -56,7 +56,7 @@ for i in range(len(url_df)):
         print(e)
 
     #add number to files
-    filepath = '/Users/pulseid/Downloads'
+    filepath = '/Users/test/Downloads'
     dirpath = '/bookpages/'
     filename = max([filepath + "/"+ f for f in os.listdir(filepath)], key=os.path.getctime)
     newfilename = filepath + '/books' + filename[24:-4] +'_' +  str(i) + '.pdf'
